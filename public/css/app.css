@@ -1,0 +1,130 @@
+@import url("bootstrap.min.css");
+
+/* font cdn */
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+
+body {
+    font-family: "Comfortaa", cursive;
+}
+
+/* Side Nav function */
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+/* /////// */
+
+table {
+    font-weight: 100;
+}
+
+#bar {
+    margin-bottom: 50px;
+}
+
+#side-left {
+    float: left;
+}
+#side-right {
+    float: right;
+}
+
+.modal-header button {
+    outline: none;
+}
+
+.modal-header button:focus {
+    outline: none;
+}
+
+.modal-header button:hover {
+    color: red;
+}
+
+/* drop menu */
+.dropbtn {
+    /* background-color: #04aa6d; */
+    color: white;
+    /* padding: 16px; */
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    right: 20;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 70px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00000046;
+}
+
+.br-0 {
+    border-radius: 0px;
+}
